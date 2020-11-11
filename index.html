@@ -26,68 +26,69 @@
 <body>
   <div class="container">
     <header></header>
+    <!-- FORM FOR STAT ENTRY -->
     <main>
       <form>
         <fieldset>
-          <legend>Choose Player...</legend>
+          <legend>Choose Player...</legend>     <!--Player Picker-->
           <div class="form-team">
             <h2 id="away-team-players">Away</h2>
-            <input id="playerA1" type="radio" name="player" value="teamA.players[0]" required>
+            <input id="playerA1" type="radio" name="player" value="A1" required>
             <label for="playerA1">Player A1</label>
-            <input id="playerA2" type="radio" name="player" value="teamA.players[1]" required>
+            <input id="playerA2" type="radio" name="player" value="A2" required>
             <label for="playerA2">Player A2</label>
-            <input id="playerA3" type="radio" name="player" value="teamA.players[2]" required>
+            <input id="playerA3" type="radio" name="player" value="A3" required>
             <label for="playerA3">Player A3</label>
-            <input id="playerA4" type="radio" name="player" value="teamA.players[3]" required>
+            <input id="playerA4" type="radio" name="player" value="A4" required>
             <label for="playerA4">Player A4</label>
-            <input id="playerA5" type="radio" name="player" value="teamA.players[4]" required>
+            <input id="playerA5" type="radio" name="player" value="A5" required>
             <label for="playerA5">Player A5</label>
-            <input id="playerA6" type="radio" name="player" value="teamA.players[5]" required>
+            <input id="playerA6" type="radio" name="player" value="A6" required>
             <label for="playerA6">Player A6</label>
-            <input id="playerA7" type="radio" name="player" value="teamA.players[6]" required>
+            <input id="playerA7" type="radio" name="player" value="A7" required>
             <label for="playerA7">Player A7</label>
-            <input id="playerA8" type="radio" name="player" value="teamA.players[7]" required>
+            <input id="playerA8" type="radio" name="player" value="A8" required>
             <label for="playerA8">Player A8</label>
-            <input id="playerA9" type="radio" name="player" value="teamA.players[8]" required>
+            <input id="playerA9" type="radio" name="player" value="A9" required>
             <label for="playerA9">Player A9</label>
-            <input id="playerA10" type="radio" name="player" value="teamA.players[9]" required>
+            <input id="playerA10" type="radio" name="player" value="A10" required>
             <label for="playerA10">Player A10</label>
-            <input id="playerA11" type="radio" name="player" value="teamA.players[10]" required>
+            <input id="playerA11" type="radio" name="player" value="A11" required>
             <label for="playerA11">Player A11</label>
-            <input id="playerA12" type="radio" name="player" value="teamA.players[11]" required>
+            <input id="playerA12" type="radio" name="player" value="A12" required>
             <label for="playerA12">Player A12</label>
           </div>
           <div class="form-team">
             <h2 id="home-team-players">Home</h2>
-            <input id="playerB1" type="radio" name="player" value="teamB.players[0]" required>
+            <input id="playerB1" type="radio" name="player" value="B1" required>
             <label for="playerB1">Player B1</label>
-            <input id="playerB2" type="radio" name="player" value="teamB.players[1]" required>
+            <input id="playerB2" type="radio" name="player" value="B2" required>
             <label for="playerB2">Player B2</label>
-            <input id="playerB3" type="radio" name="player" value="teamB.players[2]" required>
+            <input id="playerB3" type="radio" name="player" value="B3" required>
             <label for="playerB3">Player B3</label>
-            <input id="playerB4" type="radio" name="player" value="teamB.players[3]" required>
+            <input id="playerB4" type="radio" name="player" value="B4" required>
             <label for="playerB4">Player B4</label>
-            <input id="playerB5" type="radio" name="player" value="teamB.players[4]" required>
+            <input id="playerB5" type="radio" name="player" value="B5" required>
             <label for="playerB5">Player B5</label>
-            <input id="playerB6" type="radio" name="player" value="teamB.players[5]" required>
+            <input id="playerB6" type="radio" name="player" value="B6" required>
             <label for="playerB6">Player B6</label>
-            <input id="playerB7" type="radio" name="player" value="teamB.players[6]" required>
+            <input id="playerB7" type="radio" name="player" value="B7" required>
             <label for="playerB7">Player B7</label>
-            <input id="playerB8" type="radio" name="player" value="teamB.players[7]" required>
+            <input id="playerB8" type="radio" name="player" value="B8" required>
             <label for="playerB8">Player B8</label>
-            <input id="playerB9" type="radio" name="player" value="teamB.players[8]" required>
+            <input id="playerB9" type="radio" name="player" value="B9" required>
             <label for="playerB9">Player B9</label>
-            <input id="playerB10" type="radio" name="player" value="teamB.players[9]" required>
+            <input id="playerB10" type="radio" name="player" value="B10" required>
             <label for="playerB10">Player B10</label>
-            <input id="playerB11" type="radio" name="player" value="teamB.players[10]" required>
+            <input id="playerB11" type="radio" name="player" value="B11" required>
             <label for="playerB11">Player B11</label>
-            <input id="playerB12" type="radio" name="player" value="teamB.players[11]" required>
+            <input id="playerB12" type="radio" name="player" value="B12" required>
             <label for="playerB12">Player B12</label>
           </div>
         </fieldset>
         <div class="divider"></div>
-        <fieldset>
-          <legend>Choose Stat Event...</legend>
+        <fieldset>                                 <!-- Stat Picker-->
+          <legend>Choose Stat Event...</legend>      
           <input id="2ptMade" type="radio" name="action" value="2ptMade" required>
           <label for="2ptMade">2 Pointer Made</label>
           <input id="2ptMissed" type="radio" name="action" value="2ptMissed" required>
@@ -117,17 +118,18 @@
               Add button or something else for this
         -->
         </fieldset>
-        <input type="submit">Record Stat</input>
+        <input type="submit" id="submitRecord">Record Stat</input>
       </form>
     </main>
-    <aside>
+    <aside>                             <!-- Box Score Stats Display-->
       <section class="team-stats">
         <div class="team-and-score">
           <h1>Team A</h1>
           <h1>0</h1>
         </div>
-        <table>
+        <table id="box-score-A">
           <tr>
+            <th></th>
             <th>Player</th>
             <th>Pts</th>
             <th>FGM</th>
@@ -149,6 +151,7 @@
             <th>TO</th>
           </tr>
           <tr>
+            <th></th>
             <th>TOTAL</th>
             <th>0</th>
             <th>0</th>
@@ -177,8 +180,9 @@
           <h1>Team B</h1>
           <h1>0</h1>
         </div>
-        <table>
+        <table id="box-score-B">
           <tr>
+            <th></th>
             <th>Player</th>
             <th>Pts</th>
             <th>FGM</th>
@@ -200,6 +204,7 @@
             <th>TO</th>
           </tr>
           <tr>
+            <th></th>
             <th>TOTAL</th>
             <th>0</th>
             <th>0</th>

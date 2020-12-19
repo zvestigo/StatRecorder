@@ -380,9 +380,9 @@ function recordEvent() {
   refreshStats();
 }
 
-var submitRecord = document.getElementById("submitRecord");
+var recordBtn = document.getElementById("recordBtn");
 
-submitRecord.addEventListener('click', recordEvent);
+recordBtn.addEventListener('click', recordEvent);
 
 
 

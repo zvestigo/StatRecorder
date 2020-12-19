@@ -1,17 +1,24 @@
 {
-  "name": " ",
-  "version": "0.0.1",
-  "description": "",
-  "keywords": "",
-  "license": "",
-  "author": "",
+  "name": "statrecorder",
+  "version": "1.0.0",
+  "description": "Web app to record player and team stats during a basketball game",
+  "main": "index.html",
   "scripts": {
-    "build": "parcel build index.html",
-    "dev": "parcel index.html --open",
-    "start": "npm run build && npm run dev",
+    "lite": "lite-server",
+    "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zvestigo/basketball-stat-recorder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zvestigo/basketball-stat-recorder/issues"
+  },
+  "homepage": "https://github.com/zvestigo/basketball-stat-recorder#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "lite-server": "^2.5.4"
   }
 }

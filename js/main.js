@@ -64,7 +64,7 @@ function fillStats() {
 
   function fixPercent(stat) {
     if (stat.innerText == "NaN%") {
-      stat.innerText = "n/a";
+      stat.innerText = "-";
     } else {
       stat.innerText = stat.innerText;
     }
@@ -183,7 +183,7 @@ function refreshStats() {
   
   function fixPercent(stat) {
     if (stat.innerText == "NaN%") {
-      stat.innerText = "n/a";
+      stat.innerText = "-";
     } else {
       stat.innerText = stat.innerText;
     }
@@ -345,7 +345,7 @@ function recordEvent() {
     case "ftMissed":
       player.ftAttempts += 1;
       break;
-    case "Assist":
+    case "assist":
       player.assists += 1;
       break;
     case "defRebound":

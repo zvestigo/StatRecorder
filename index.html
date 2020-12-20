@@ -20,7 +20,7 @@
 
 
 <body>
-  <header class="jumbotron">
+  <header class="jumbotron py-sm-4">
     <h1>Stat Recorder</h1>
   </header>
   <!-- FORM FOR STAT ENTRY -->
@@ -30,87 +30,88 @@
         <form>
           <div class="row">
             <div class="col">
-              <div class="btn-toolbar" role="toolbar">      <!-- NEED: Make it so only one side is checked at a time & for it to stay checked when click around -->
-                <legend>Choose Player...</legend>
-                <div class="btn-group btn-group-toggle btn-group-vertical" role="group" data-toggle="buttons">
-                  <h2>Away</h2>
-                  <label class="btn btn-secondary"><input type="radio" name="player" value="A1">Player A1</button></label>
-                  <label class="btn btn-secondary"><input type="radio" name="player" value="A2">Player A2</button></label>
-                  <label class="btn btn-secondary"><input type="radio" name="player" value="A3">Player A3</button></label>
-                  <label class="btn btn-secondary"><input type="radio" name="player" value="A4">Player A4</button></label>
-                  <label class="btn btn-secondary"><input type="radio" name="player" value="A5">Player A5</button></label>
-                  <label class="btn btn-secondary"><input type="radio" name="player" value="A6">Player A6</button></label>
-                  <label class="btn btn-secondary"><input type="radio" name="player" value="A7">Player A7</button></label>
-                  <label class="btn btn-secondary"><input type="radio" name="player" value="A8">Player A8</button></label>
-                  <label class="btn btn-secondary"><input type="radio" name="player" value="A9">Player A9</button></label>
-                  <label class="btn btn-secondary"><input type="radio" name="player" value="A10">Player A10</button></label>
-                  <label class="btn btn-secondary"><input type="radio" name="player" value="A11">Player A11</button></label>
-                  <label class="btn btn-secondary"><input type="radio" name="player" value="A12">Player A12</button></label>
-                </div>
-                <div class="btn-group btn-group-toggle btn-group-vertical" role="group" data-toggle="buttons">
-                  <h2>Home</h2>
-                  <label class="btn btn-primary"><input type="radio" name="player" value="B1">Player B1</button></label>
-                  <label class="btn btn-primary"><input type="radio" name="player" value="B2">Player B2</button></label>
-                  <label class="btn btn-primary"><input type="radio" name="player" value="B3">Player B3</button></label>
-                  <label class="btn btn-primary"><input type="radio" name="player" value="B4">Player B4</button></label>
-                  <label class="btn btn-primary"><input type="radio" name="player" value="B5">Player B5</button></label>
-                  <label class="btn btn-primary"><input type="radio" name="player" value="B6">Player B6</button></label>
-                  <label class="btn btn-primary"><input type="radio" name="player" value="B7">Player B7</button></label>
-                  <label class="btn btn-primary"><input type="radio" name="player" value="B8">Player B8</button></label>
-                  <label class="btn btn-primary"><input type="radio" name="player" value="B9">Player B9</button></label>
-                  <label class="btn btn-primary"><input type="radio" name="player" value="B10">Player B10</button></label>
-                  <label class="btn btn-primary"><input type="radio" name="player" value="B11">Player B11</button></label>
-                  <label class="btn btn-primary"><input type="radio" name="player" value="B12">Player B12</button></label>
-                </div>
-              </div>
+                   <!-- NEED: Make it so only one side is checked at a time & for it to stay checked when click around -->
+              <legend>Choose Player...</legend>
             </div>
           </div>
-          <div class="row">                            <!-- Stat Picker-->
-            <div class="col">
-              <div class="btn-toolbar">
-                <legend>Choose Stat Event...</legend>   
-                <div class="btn-group btn-group-toggle">
-                  <label class="btn btn-info" for="2ptMade"><input id="2ptMade" type="radio" name="action" value="2ptMade">2 Pointer Made</label>                
-                  <label class="btn btn-info" for="2ptMissed"><input id="2ptMissed" type="radio" name="action" value="2ptMissed">2 Pointer Missed</label>                
-                  <label class="btn btn-info" for="3ptMade"><input id="3ptMade" type="radio" name="action" value="3ptMade">3 Pointer Made</label>                
-                  <label class="btn btn-info" for="ftMade"><input id="ftMade" type="radio" name="action" value="ftMade">Free Throw Made</label>
-                </div>
-                <div class="btn-group btn-group-toggle">
-                  <label class="btn btn-info" for="ftMissed"><input id="ftMissed" type="radio" name="action" value="ftMissed">Free Throw Missed</label>                
-                  <label class="btn btn-info" for="defRebound"><input id="defRebound" type="radio" name="action" value="defRebound">Defensive Rebound</label>                
-                  <label class="btn btn-info" for="offRebound"><input id="offRebound" type="radio" name="action" value="offRebound">Offensive Rebound</label>                
-                  <label class="btn btn-info" for="assist"><input id="assist" type="radio" name="action" value="assist">Assist</label>
-                </div>
-                <div class="btn-group btn-group-toggle">
-                  <label class="btn btn-info" for="block"><input id="block" type="radio" name="action" value="block">Block</label>                
-                  <label class="btn btn-info"for="steal"><input id="steal" type="radio" name="action" value="steal">Steal</label>                
-                  <label class="btn btn-info" for="foul"><input id="foul" type="radio" name="action" value="foul">Foul</label>                
-                  <label class="btn btn-info" for="turnover"><input id="turnover" type="radio" name="action" value="turnover">Turnover (Player)</label>
-                  <!-- <input id="teamTurnover" type="radio" name="action" value="teamTurnover">
-                  <label for="teamTurnover">Team Turnover (No Player)</label> 
-                      Add button or something else for this
-              -->
-                </div>
-              </div>
+          <fieldset class="form-group text-center" data-toggle="buttons">      <!--Player Picker-->
+            <div class="row">
+              <div class="col-10 col-md-5 col-lg-6 col-xl-5 mx-auto">
+                <h2>Away</h2>
+                <label class="btn btn-secondary btn-lg"><input class="radio" type="radio" name="player" value="A1">Player A1</button></label>
+                <label class="btn btn-secondary btn-lg"><input class="radio" type="radio" name="player" value="A2">Player A2</button></label>
+                <label class="btn btn-secondary btn-lg"><input class="radio" type="radio" name="player" value="A3">Player A3</button></label>
+                <label class="btn btn-secondary btn-lg"><input class="radio" type="radio" name="player" value="A4">Player A4</button></label>
+                <label class="btn btn-secondary btn-lg"><input class="radio" type="radio" name="player" value="A5">Player A5</button></label>
+                <label class="btn btn-secondary btn-lg"><input class="radio" type="radio" name="player" value="A6">Player A6</button></label>
+                <label class="btn btn-secondary btn-lg"><input class="radio" type="radio" name="player" value="A7">Player A7</button></label>
+                <label class="btn btn-secondary btn-lg"><input class="radio" type="radio" name="player" value="A8">Player A8</button></label>
+                <label class="btn btn-secondary btn-lg"><input class="radio" type="radio" name="player" value="A9">Player A9</button></label>
+                <label class="btn btn-secondary btn-lg"><input class="radio" type="radio" name="player" value="A10">Player A10</button></label>
+                <label class="btn btn-secondary btn-lg"><input class="radio" type="radio" name="player" value="A11">Player A11</button></label>
+                <label class="btn btn-secondary btn-lg"><input class="radio" type="radio" name="player" value="A12">Player A12</button></label></div>
+              <div class="col-10 col-md-5 col-lg-6 col-xl-5 mx-auto">
+                <h2>Home</h2>
+                <label class="btn btn-primary btn-lg"><input class="radio" type="radio" name="player" value="B1">Player B1</button></label>
+                <label class="btn btn-primary btn-lg"><input class="radio" type="radio" name="player" value="B2">Player B2</button></label>
+                <label class="btn btn-primary btn-lg"><input class="radio" type="radio" name="player" value="B3">Player B3</button></label>
+                <label class="btn btn-primary btn-lg"><input class="radio" type="radio" name="player" value="B4">Player B4</button></label>
+                <label class="btn btn-primary btn-lg"><input class="radio" type="radio" name="player" value="B5">Player B5</button></label>
+                <label class="btn btn-primary btn-lg"><input class="radio" type="radio" name="player" value="B6">Player B6</button></label>
+                <label class="btn btn-primary btn-lg"><input class="radio" type="radio" name="player" value="B7">Player B7</button></label>
+                <label class="btn btn-primary btn-lg"><input class="radio" type="radio" name="player" value="B8">Player B8</button></label>
+                <label class="btn btn-primary btn-lg"><input class="radio" type="radio" name="player" value="B9">Player B9</button></label>
+                <label class="btn btn-primary btn-lg"><input class="radio" type="radio" name="player" value="B10">Player B10</button></label>
+                <label class="btn btn-primary btn-lg"><input class="radio" type="radio" name="player" value="B11">Player B11</button></label>
+                <label class="btn btn-primary btn-lg"><input class="radio" type="radio" name="player" value="B12">Player B12</button></label></div>
+            </div>
+          </fieldset>
               
+            
+          <div class="row">                                         
+            <div class="col">
+                <legend>Choose Stat Event...</legend> 
             </div>                               
-        </div>
-        <div class="row">
-          <div class="col">
-            <button class="btn btn-dark" id="recordBtn">Record Stat</input>
           </div>
-        </div>
+          <fieldset class="form-group text-center" data-toggle="buttons">        <!-- Stat Picker-->
+            <div class="row">
+              <div class="col-10 col-lg-12 col-xl-10 mx-auto ">
+                <label class="btn btn-info btn-lg"><input class="radio" type="radio" name="action" value="2ptMade">2 Pointer Made</label>                
+                <label class="btn btn-info btn-lg"><input class="radio" type="radio" name="action" value="2ptMissed">2 Pointer Missed</label>                
+                <label class="btn btn-info btn-lg"><input class="radio" type="radio" name="action" value="3ptMade">3 Pointer Made</label>
+                <label class="btn btn-info btn-lg"><input class="radio" type="radio" name="action" value="3ptMissed">3 Pointer Missed</label>                 
+                <label class="btn btn-info btn-lg"><input class="radio" type="radio" name="action" value="ftMade">Free Throw Made</label>
+                <label class="btn btn-info btn-lg"><input class="radio" type="radio" name="action" value="ftMissed">Free Throw Missed</label>                
+                <label class="btn btn-info btn-lg"><input class="radio" type="radio" name="action" value="defRebound">Defensive Rebound</label>                
+                <label class="btn btn-info btn-lg"><input class="radio" type="radio" name="action" value="offRebound">Offensive Rebound</label>                
+                <label class="btn btn-info btn-lg"><input class="radio" type="radio" name="action" value="assist">Assist</label>
+                <label class="btn btn-info btn-lg"><input class="radio" type="radio" name="action" value="block">Block</label>                
+                <label class="btn btn-info btn-lg"><input class="radio" type="radio" name="action" value="steal">Steal</label>                
+                <label class="btn btn-info btn-lg"><input class="radio" type="radio" name="action" value="foul">Foul</label>                
+                <label class="btn btn-info btn-lg"><input class="radio" type="radio" name="action" value="turnover">Turnover (Player)</label>
+                <!-- <input id="teamTurnover" class="radio" type="radio" name="action" value="teamTurnover">
+                  <label for="teamTurnover">Team Turnover (No Player)</label> 
+                      Add button or something else for this  -->
+              </div>
+            </div>
+          </fieldset>      
+          
+          <div class="row">
+            <div class="col-10 mx-auto text-center text-md-right">
+              <button class="btn btn-danger btn-lg" id="recordBtn">Record Stat</input>     <!-- Record Btn -->
+            </div>
+          </div>
           
         </form>
       </div>
-      <div class="col-lg-6">                <!-- Box Score Stats Display -->
-        <section class="team-stats table-responsive">
-          <div class="team-and-score">
+      <div class="col-lg-5 col-xl-6">                <!-- Box Score Stats Display -->
+        <section class="team-stats mb-4">
+          <div class="team-and-score sticky-left">
             <h1>Team A</h1>
             <h1 class="pr-5">0</h1>
           </div>
-          <table class="table table-striped table-sm" id="box-score-A">
-            <thead>
+          <table class="table table-responsive table-striped table-sm" id="box-score-A">
+            <thead class="bg-secondary text-white">
               <tr>
                 <th scope="col"></th>
                 <th class="th-player" scope="col">Player</th>
@@ -161,13 +162,13 @@
             
           </table>
         </section>
-        <section class="team-stats table-responsive">
+        <section class="team-stats mb-4">
           <div class="team-and-score">
             <h1>Team B</h1>
-            <h1>0</h1>
+            <h1 class="pr-5">0</h1>
           </div>
-          <table class="table table-striped table-sm" id="box-score-B">
-            <thead>
+          <table class="table table-responsive table-striped table-sm" id="box-score-B">
+            <thead class="bg-primary text-white">
               <tr>
                 <th scope="col"></th>
                 <th class="th-player" scope="col">Player</th>
@@ -220,6 +221,16 @@
       </div>
     </div>
   </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+          <div class="col-12">
+              <p class="m-0">Made by <a href="https://github.com/zvestigo/">ZVestigo</a></p>
+          </div>
+      </div>
+  </div>
+  </footer>
     
 
   
